@@ -1,7 +1,21 @@
-"""Movie theatre ticketing system - v5
-update totals
+"""Movie theatre ticketing system - v6
+print end summary
 Created by Sophie Sainsbury
 """
+
+
+# component 6 - Print end summary
+def print_summary(tickets_sold, adult_tickets, student_tickets, child_tickets,
+                  gift_tickets, total_sales):
+    print("="*20)
+    print(f"The total tickets sold today are {tickets_sold}\n"
+          f"This was made up of:\n"
+          f"\t{adult_tickets} for adults, and \n"
+          f"\t{student_tickets} for students, and\n"
+          f"\t{child_tickets} for children, and\n"
+          f"\t{gift_tickets} gift vouchers\n"
+          f"Sales for the day came to ${total_sales:.2f}")
+    print("="*20)
 
 
 # Component 4 - Confirm Order
