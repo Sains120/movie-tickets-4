@@ -88,6 +88,12 @@ while ticket_wanted == "Y":
     ticket_wanted = input("Do you want to sell another ticket (Y/N): "
                           "").upper()
 
+# Component 6 - produce summary of sales
+print(print_summary(tickets_sold, adult_tickets, student_tickets, child_tickets,
+                  gift_tickets, total_sales)
+
 
 # Main routine
 sell_ticket()
+print("Goodbye\n"
+      "Thanks for using FanFare Movies")
