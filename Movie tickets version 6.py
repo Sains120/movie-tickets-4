@@ -70,7 +70,7 @@ while ticket_wanted == "Y":
         print("order confirmed")
 
         # Component 5 - update totals
-        total_sales += cost
+        total_sales += cost * num_tickets
         tickets_sold += num_tickets
         if ticket_type == "A":
             adult_tickets += num_tickets
