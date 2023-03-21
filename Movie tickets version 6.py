@@ -52,9 +52,8 @@ gift_tickets = 0
 tickets_sold = 0
 total_sales = 0
 
+
 # Component 2 - Get the category and number of tickets required
-
-
 ticket_wanted = "Y"
 while ticket_wanted == "Y":
     ticket_type = input("What kind of ticket do you want: \n"
@@ -69,7 +68,8 @@ while ticket_wanted == "Y":
     if confirm_order(ticket_type, num_tickets, cost):
         print("order confirmed")
 
-        # Component 5 - update totals
+
+# Component 5 - update totals
         total_sales += cost * num_tickets
         tickets_sold += num_tickets
         if ticket_type == "A":
@@ -88,9 +88,10 @@ while ticket_wanted == "Y":
     ticket_wanted = input("Do you want to sell another ticket (Y/N): "
                           "").upper()
 
+
 # Component 6 - produce summary of sales
 print(print_summary(tickets_sold, adult_tickets, student_tickets, child_tickets,
-                  gift_tickets, total_sales)
+                  gift_tickets, total_sales))
 
 
 # Main routine
